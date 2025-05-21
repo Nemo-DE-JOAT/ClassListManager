@@ -89,4 +89,8 @@
         <description>A student can only view all the students in class.</description>
         <role-name>student</role-name>
     </security-role>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/userforbidden.jsp</location>
+    </error-page>
 </web-app>
