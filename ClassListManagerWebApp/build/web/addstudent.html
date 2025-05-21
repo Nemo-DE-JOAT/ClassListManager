@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Student Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Add student</h1>
+            <p>
+                Please enter the details of the student below or
+                <br>
+                Click <a href="index.html">here</a> to go back to the welcome page:
+            </p>
+            <form action="AddStudentServlet.do" method="POST">
+                <table border="0">
+                        <tr>
+                            <td>Name: </td>
+                            <td><input type="text" name="name"/></td>
+                        </tr>
+                        <tr>
+                            <td>Age: </td>
+                            <td><input type="text" name="age"/></td>
+                        </tr>
+                        <tr>
+                            <td>Student number: </td>
+                            <td><input type="text" name="id"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="ADD"/></td>
+                        </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
