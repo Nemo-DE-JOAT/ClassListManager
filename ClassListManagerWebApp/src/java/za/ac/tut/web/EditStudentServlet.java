@@ -41,6 +41,7 @@ public class EditStudentServlet extends HttpServlet {
         }else {
             Student student = modifyStudent(targetStudent, age);
             sfl.editStudent(student);
+            location = "studentfound.jsp";
         }
         RequestDispatcher disp = request.getRequestDispatcher(location);
         disp.forward(request, response);
